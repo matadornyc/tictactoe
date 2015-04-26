@@ -1,0 +1,101 @@
+(
+w=Window.new("Tic-Tac-Toe", resizable:false);
+u=UserView(w,w.view.bounds);
+v=UserView(w, w.view.bounds.insetBy(50,50));
+
+u.background=Color.rand;
+u.resize=5;
+~size=(v.bounds.height/3);
+c=Button(v,Rect(0,0,~size,~size));
+
+c.states=([
+	["", Color.white, Color.white],
+	["X", Color.black, Color.white],
+	["O", Color.white, Color.black],
+
+	]);
+
+d=Button(v,Rect(~size,~size,~size,~size));
+
+d.states=([
+	["", Color.white, Color.white],
+	["X", Color.black, Color.white],
+	["O", Color.white, Color.black],
+
+	]);
+
+e=Button(v,Rect(~size*2,~size,~size,~size));
+
+e.states=([
+	["", Color.white, Color.white],
+	["X", Color.black, Color.white],
+	["O", Color.white, Color.black],
+
+	]);
+
+f=Button(v,Rect(~size,0,~size,~size));
+
+f.states=([
+	["", Color.white, Color.white],
+	["X", Color.black, Color.white],
+	["O", Color.white, Color.black],
+
+	]);
+
+
+g=Button(v,Rect(~size*2,0,~size,~size));
+
+g.states=([
+	["", Color.white, Color.white],
+	["X", Color.black, Color.white],
+	["O", Color.white, Color.black],
+
+	]);
+
+
+h=Button(v,Rect(0,~size,~size,~size));
+
+h.states=([
+	["", Color.white, Color.white],
+	["X", Color.black, Color.white],
+	["O", Color.white, Color.black],
+
+	]);
+
+
+i=Button(v,Rect(0,~size*2,~size,~size));
+
+i.states=([
+	["", Color.white, Color.white],
+	["X", Color.black, Color.white],
+	["O", Color.white, Color.black],
+
+	]);
+
+
+j=Button(v,Rect(~size*2,~size*2,~size,~size));
+
+j.states=([
+	["", Color.white, Color.white],
+	["X", Color.black, Color.white],
+	["O", Color.white, Color.black],
+
+	]);
+
+
+k=Button(v,Rect(~size,~size*2,~size,~size));
+
+k.states=([
+	["", Color.white, Color.white],
+	["X", Color.black, Color.white],
+	["O", Color.white, Color.black],
+
+	]);
+
+
+v.resize = 5;
+v.background=Color.rand;
+
+
+w.front;
+)
